@@ -127,10 +127,9 @@ class Laser_feature
         return parameter;
     }
 
-
-    int                       init_ros_env()
+    int init_ros_env()
     {
-
+        
         ros::NodeHandle nh;
         m_init_timestamp = ros::Time::now();
         init_livox_lidar_para(nh);
